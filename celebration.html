@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration Page</title>
+    <link rel="stylesheet" href="celebration.css">
+</head>
+<body>
+    <div class="box">
+        <div class="celebration">
+            <h1>Congratulations, <span id="winner"></span>!</h1>
+            <p>You've won the game!</p>
+            <!-- Add any other celebratory content here -->
+        </div>
+    </div>
+
+    <script>
+        // Accessing the query parameter to get the winning player's name
+        const urlParams = new URLSearchParams(window.location.search);
+        const winner = urlParams.get('winner');
+        document.getElementById('winner').textContent = winner;
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: url('https://t4.ftcdn.net/jpg/03/86/35/97/360_F_386359720_njQcQ9M4wskBp4Rm395vLfODLVkrUOq7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%; /* Ensure the box doesn't exceed the viewport width */
+    text-align: center; /* Center align text within the box */
+}
+
+.celebration {
+    color: #000; /* Black text */
+}
+
+.celebration h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Adjust font size for readability */
+}
+
+.celebration p {
+    margin-top: 10px;
+    font-size: 1.2em; /* Adjust font size for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .celebration h1 {
+        font-size: 1.5em; /* Smaller font size on smaller screens */
+    }
+
+    .celebration p {
+        font-size: 1em; /* Smaller font size on smaller screens */
+    }
+}
